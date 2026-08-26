@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Edit Post | FinWisdom</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-main">FIN</span>
+            <span class="logo-gold">WISDOM</span>
+
+            <small>
+                Learn • Plan • Grow
+            </small>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#articles">
+                Articles
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#calculators">
+                Calculators
+            </a>
+
+        </nav>
+
+        <div
+            class="nav-buttons"
+            id="navButtons"
+        >
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- EDIT POST -->
+
+    <main class="create-post-page">
+
+        <div class="create-post-container">
+
+            <div class="create-post-header">
+
+                <p class="section-label">
+                    YOUR ARTICLE
+                </p>
+
+                <h1>
+                    Edit Your Blog
+                </h1>
+
+                <p>
+                    Update your financial article.
+                </p>
+
+            </div>
+
+
+            <form id="editPostForm">
+
+                <!-- TITLE -->
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Article Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Article title"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select
+                        id="category"
+                        required
+                    >
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="Investing">
+                            Investing
+                        </option>
+
+                        <option value="Saving">
+                            Saving
+                        </option>
+
+                        <option value="Personal Finance">
+                            Personal Finance
+                        </option>
+
+                        <option value="Budgeting">
+                            Budgeting
+                        </option>
+
+                        <option value="Loans">
+                            Loans
+                        </option>
+
+                        <option value="Tax">
+                            Tax
+                        </option>
+
+                        <option value="Financial Planning">
+                            Financial Planning
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- CONTENT -->
+
+                <div class="form-group">
+
+                    <label for="content">
+                        Article Content
+                    </label>
+
+                    <textarea
+                        id="content"
+                        rows="15"
+                        placeholder="Write your article..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Update Article
+                </button>
+
+
+                <p
+                    id="editMessage"
+                    class="form-message"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <h2>
+                FIN<span>WISDOM</span>
+            </h2>
+
+            <p>
+                Learn • Plan • Grow
+            </p>
+
+            <p>
+                Making financial knowledge
+                simple and accessible.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <div class="copyright">
+
+        © 2026 FinWisdom. Learn • Plan • Grow.
+
+    </div>
+
+
+    <script src="js/edit-post.js"></script>
+
+</body>
+
+</html>
